@@ -13,5 +13,20 @@ a {
 }
 
 main {
-  height: 500px;
+  p {
+    height: 100px;
+    margin-bottom: 0;
+  }
+
+  #shop {
+    img {
+      width: 50px;
+      margin: 1.5rem 0;
+    }
+
+    span {
+      text-transform: uppercase;
+      margin: 0 3rem 0 1rem;
+    }
+  }
 }
