@@ -8,7 +8,7 @@ export default function Header() {
 
             <nav>
                 <div>
-                    <a href="#">Charachters</a>
+                    <a href="#">Characters</a>
                     <a href="#">Comics</a>
                     <a href="#">Movies</a>
                     <a href="#">TV</a>

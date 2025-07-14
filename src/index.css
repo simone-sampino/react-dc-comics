@@ -1,17 +1,27 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  padding: 0.7rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: black;
+/* Generics */
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
+/* Header */
+header {
+  a {
+    text-decoration: none;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: black;
+  }
+}
+
+/* Main */
 main {
   p {
     height: 100px;
@@ -28,5 +38,33 @@ main {
       text-transform: uppercase;
       margin: 0 3rem 0 1rem;
     }
+  }
+}
+
+/* Footer */
+footer {
+  background-image: url(../public/img/footer-bg.jpg);
+  /* url(../public/img/dc-logo-bg.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: 700;
   }
 }
