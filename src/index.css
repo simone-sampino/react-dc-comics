@@ -43,13 +43,17 @@ main {
 
   #shop {
     img {
-      width: 50px;
+      width: 35px;
       margin: 1.5rem 0;
     }
 
     span {
       text-transform: uppercase;
       margin: 0 3rem 0 1rem;
+    }
+
+    .big {
+      width: 25px;
     }
   }
 

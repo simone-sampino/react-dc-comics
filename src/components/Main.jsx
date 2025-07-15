@@ -1,42 +1,5 @@
-import digitalComics from '/img/digital-comics.png'
-import merchandise from '/img/merchandise.png'
-import subs from '/img/subscriptions.png'
-import shopLocator from '/img/shop-locator.png'
-import powerVisa from '/img/power-visa.svg'
-import comicsArray from './comics';
-
-const shop = [
-    {
-        id: 1,
-        src: digitalComics,
-        alt: "Digital Comics",
-        span: 'digital comics',
-    },
-    {
-        id: 2,
-        src: merchandise,
-        alt: "Merchandise",
-        span: 'dc merchandise',
-    },
-    {
-        id: 3,
-        src: subs,
-        alt: "Subscriptions",
-        span: 'subscription',
-    },
-    {
-        id: 4,
-        src: shopLocator,
-        alt: "Shop Locator",
-        span: 'comic shop locator',
-    },
-    {
-        id: 5,
-        src: powerVisa,
-        alt: "Power Visa",
-        span: 'dc power visa',
-    }
-]
+import comicsArray from '../../db/comics';
+import shopArray from '../../db/shop';
 
 export default function Main() {
     return (
@@ -56,9 +19,9 @@ export default function Main() {
 
             <div className="bg-primary">
                 <div id='shop' className='container d-flex align-items-center justify-content-evenly'>
-                    {shop.map(({id, src, alt, span}) => (
+                    {shopArray.map(({id, src, alt, span, big}) => (
                         <div key={id}>
-                            <img src={src} alt={alt}/>
+                            <img className={big ? 'big' : ''} src={src} alt={alt}/>
                             <span>{span}</span>
                         </div>
                     ))}
