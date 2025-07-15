@@ -25,6 +25,13 @@ header {
       padding-bottom: 51px;
     }
   }
+
+  .jumbotron {
+    background-image: url(/img/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+  }
 }
 
 /* Main */

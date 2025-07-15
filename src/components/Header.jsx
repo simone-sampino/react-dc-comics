@@ -3,7 +3,8 @@ import dcLogo from '/img/dc-logo.png'
 export default function Header() {
 
     return (
-        <header className='container d-flex align-items-center justify-content-between my-3'>
+        <header>
+            <div className='container d-flex align-items-center justify-content-between my-3'>
             <img src={dcLogo} alt='DC Logo'/>
 
             <nav>
@@ -20,6 +21,10 @@ export default function Header() {
                     <a href="#">Shop</a>
                 </div>
             </nav>
+            </div>
+
+            <div className="jumbotron"></div>
+            
         </header>
     )
 }
