@@ -49,11 +49,23 @@ main {
 
 /* Footer */
 footer {
-  background-image: url(../public/img/footer-bg.jpg);
-  /* url(../public/img/dc-logo-bg.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 3rem;
+  .bg-comics {
+    background-image: url(../public/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-top: 3rem; */
+  }
+
+  .bg-dc {
+    background-image: url(../public/img/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .links {
+    margin: 3rem 0;
+  }
 
   ul {
     margin: 0;
@@ -76,8 +88,7 @@ footer {
 
   .footer-bottom {
     background-color: rgb(55, 55, 55);
-    padding: 3rem 0;
-    margin-top: 3rem;
+    padding: 2rem 0;
 
     button {
       padding: 1rem;
