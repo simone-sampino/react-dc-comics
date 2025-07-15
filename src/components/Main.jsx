@@ -3,6 +3,7 @@ import merchandise from '/img/merchandise.png'
 import subs from '/img/subscriptions.png'
 import shopLocator from '/img/shop-locator.png'
 import powerVisa from '/img/power-visa.svg'
+import comicsArray from './comics';
 
 const shop = [
     {
@@ -39,9 +40,18 @@ const shop = [
 
 export default function Main() {
     return (
-        <main className='text-white'>
-            <div className='bg-black'>
-            <p className="container d-flex align-items-center">--&gt; Content goes here &lt;--</p>
+        <main className='bg-dark text-white'>
+            <div className='container'>
+                <div className="comics-grid">
+                {comicsArray.map(({id, thumb, series}) => (
+                    <div className='comic-card' key={id}>        
+                        <figure>
+                            <img src={thumb} alt={series}/>
+                        </figure>
+                        <figcaption>{series}</figcaption>
+                    </div>
+                ))}
+                </div>
             </div>
 
             <div className="bg-primary">
