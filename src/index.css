@@ -18,6 +18,12 @@ header {
     font-size: 0.8rem;
     text-transform: uppercase;
     color: black;
+
+    &.active {
+      color: rgb(0, 115, 255);
+      border-bottom: 0.4rem solid rgb(0, 115, 255);
+      padding-bottom: 51px;
+    }
   }
 }
 
