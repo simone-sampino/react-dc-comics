@@ -8,6 +8,7 @@
 /* Generics */
 body {
   font-family: "Open Sans", sans-serif;
+  letter-spacing: -1px;
 }
 
 /* Header */
@@ -16,8 +17,9 @@ header {
     text-decoration: none;
     padding: 0.7rem;
     font-size: 0.8rem;
+    font-weight: 600;
     text-transform: uppercase;
-    color: black;
+    color: rgb(50, 50, 50);
 
     &.active {
       color: rgb(0, 115, 255);
@@ -36,9 +38,18 @@ header {
 
 /* Main */
 main {
-  p {
-    height: 100px;
-    margin-bottom: 0;
+  position: relative;
+
+  .current-series {
+    position: absolute;
+    top: -30px;
+    left: 300px;
+    text-transform: uppercase;
+    max-width: 15%;
+    padding: 0.5rem 2rem;
+    background-color: dodgerblue;
+    font-weight: 700;
+    font-size: 1.5rem;
   }
 
   #shop {
@@ -55,6 +66,12 @@ main {
     .big {
       width: 25px;
     }
+  }
+
+  .more-comics {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
   }
 
   .comics-grid {
@@ -89,6 +106,7 @@ main {
     figcaption {
       text-transform: uppercase;
       margin-bottom: 3rem;
+      letter-spacing: normal;
     }
   }
 }

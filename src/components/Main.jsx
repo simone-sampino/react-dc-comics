@@ -4,6 +4,9 @@ import shopArray from '../../db/shop';
 export default function Main() {
     return (
         <main className='bg-dark text-white'>
+
+            <div className="current-series">current series</div>
+
             <div className='container'>
                 <div className="comics-grid">
                 {comicsArray.map(({id, thumb, series}) => (
@@ -15,6 +18,10 @@ export default function Main() {
                     </div>
                 ))}
                 </div>
+            </div>
+
+            <div className='more-comics'>
+                <a className="btn btn-primary" href="#">load more</a>
             </div>
 
             <div className="bg-primary">
@@ -40,6 +47,7 @@ export default function Main() {
                         <span>dc power visa</span>
                 </div> */}
             </div>
+
         </main>
     )
 }
