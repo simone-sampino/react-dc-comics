@@ -1,4 +1,5 @@
 import dcLogo from '/img/dc-logo.png'
+import navbarArray from '../../db/navbar'
 
 export default function Header() {
 
@@ -9,7 +10,7 @@ export default function Header() {
 
             <nav>
                 <div>
-                    <a href="#">Characters</a>
+                    {/* <a href="#">Characters</a>
                     <a href="#" className='active'>Comics</a>
                     <a href="#">Movies</a>
                     <a href="#">TV</a>
@@ -18,7 +19,12 @@ export default function Header() {
                     <a href="#">Videos</a>
                     <a href="#">Fans</a>
                     <a href="#">News</a>
-                    <a href="#">Shop</a>
+                    <a href="#">Shop</a> */}
+
+                    {navbarArray.map((item) => (
+                        <a key={item.id} href={item.href} className={item.active ? 'active' : ''}>{item.text}</a>
+                    ))}
+
                 </div>
             </nav>
             </div>
