@@ -1,7 +1,8 @@
 import comicsArray from '../../db/comics';
 import shopArray from '../../db/shop';
+import Card from './Card'
 
-export default function Main() {
+export default function Main({comics}) {
     return (
         <main className='bg-dark text-white'>
 
@@ -9,14 +10,9 @@ export default function Main() {
 
             <div className='container'>
                 <div className="comics-grid">
-                {comicsArray.map(({id, thumb, series}) => (
-                    <div className='comic-card' key={id}>        
-                        <figure>
-                            <img src={thumb} alt={series}/>
-                        </figure>
-                        <figcaption>{series}</figcaption>
-                    </div>
-                ))}
+                {comicsArray.map(({id, thumb, series}) => {
+                    return <Card key={id} thumb={thumb} series={series}/>
+                })}
                 </div>
             </div>
 
